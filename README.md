@@ -1,10 +1,11 @@
 # Capaccino GitHub Wiki
 
+![drawing2](https://github.com/APSP-AG/capaccino-public/assets/72441261/67944aeb-196d-4319-8650-049a388afa8c)
+
 ## Introduction
 
 Welcome to the GitHub Wiki for Capaccino. This repository serves as a comprehensive guide and reference for this tool, designed to assist with real-time data visualization, configuration, logging, and data retrieval. It is intended for developers, hobbyists, or anyone interested in sensor data management and analysis.
 
----
 
 ### Project Overview
 
