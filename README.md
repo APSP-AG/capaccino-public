@@ -152,11 +152,11 @@ In the Capaccino interface, you'll find several options for configuring the CDC 
 
 - **Differential Mode**: This setting dictates the configuration of your sensor system. In 'single-ended' mode, you are measuring the capacitance between the sensor and a fixed reference point, typically the ground. This is simpler but may be more susceptible to external noise. In 'differential' mode, the system measures the difference in capacitance between two sensors, which often results in more accurate readings by canceling out common-mode noise or interference affecting both sensors.
 
-In practice, the key is to select the 'Multiplier', 'Resolution', and 'Offset' parameters in such a way that maximizes the number of counts yielded by the digital conversion within the range of capacitance values you're interested in. Reference tables in the datasheet can guide you through this process. 
+In practice, the key is to select the 'Multiplier', 'Reference', and 'Offset' parameters in such a way that maximizes the number of counts yielded by the digital conversion within the range of capacitance values you're interested in. 
 
-> [!NOTE]
+> [!IMPORTANT]
 >
-> For more in-depth information and specific guidance, a link to the relevant pages of the datasheet is available in the sidebar.
+> The reference tables in the datasheet are very useful for setting the correct CDC parameters. A link to the relevant pages of the datasheet is available in the sidebar of the UI.
 
 #### How to Adjust
 
