@@ -2,10 +2,44 @@
 
 ![capaccino_render3](https://github.com/APSP-AG/capaccino-public/assets/72441261/abb2da1d-3be5-44ca-9d4e-bc8f306ff6d1)
 
+
+
 ## Introduction
 
 Welcome to the GitHub Wiki for Capaccino. This repository serves as a comprehensive guide and reference for this tool, designed to assist with real-time data visualization, configuration, logging, and data retrieval. It is intended for developers, hobbyists, or anyone interested in sensor data management and analysis.
 
+
+## Table of Contents
+* [Introduction](#introduction)
+  + [Project Overview](#project-overview)
+  + [Key Features](#key-features)
+* [Getting Started](#getting-started)
+  + [Connection](#connection)
+    - [Boot Behavior and Default Mode](#boot-behavior-and-default-mode)
+    - [Access Point (AP) Mode](#access-point-ap-mode)
+      * [How to Connect:](#how-to-connect)
+      * [Network Credentials:](#network-credentials)
+    - [Client Mode](#client-mode)
+      * [How to Connect:](#how-to-connect-1)
+      * [Browser Access Options:](#browser-access-options)
+    - [Alternative Connection via Serial Command](#alternative-connection-via-serial-command)
+* [Data Logging & Visualization](#data-logging--visualization)
+  + [Dashboard Overview](#dashboard-overview)
+    - [Data Storage and CSV Download](#data-storage-and-csv-download)
+  + [Setting Logging Frequency](#setting-logging-frequency)
+  + [Retrieving Logs](#retrieving-logs)
+* [CDC Configuration Interface](#cdc-configuration-interface)
+  + [Adjusting Device Parameters](#adjusting-device-parameters)
+    - [How to Adjust](#how-to-adjust)
+* [OTA Firmware Upgrades](#ota-firmware-upgrades)
+  + [What is OTA?](#what-is-ota)
+  + [One-Click Update Procedure](#one-click-update-procedure)
+* [Troubleshooting](#troubleshooting)
+  + [Common Issues and Fixes](#common-issues-and-fixes)
+* [Support](#support)
+  + [Reporting Bugs](#reporting-bugs)
+  + [Feature Requests](#feature-requests)
+  + [General Questions](#general-questions)
 
 ### Project Overview
 
@@ -117,7 +151,6 @@ The Dashboard is your central hub for real-time data visualization. It offers an
 - **Database Clearance:** The "Clear" button will erase all stored data points in the local database.
 
 > [!WARNING]
-> 
 > **CDC Parameter Caveats:** The CDC parameters are not stored with individual data points. When you download the CSV file, the CDC parameters are gathered and assumed to be the same across all data points. They will reflect the state that is active at the time of download.
 
 ### Setting Logging Frequency
@@ -155,7 +188,6 @@ In the Capaccino interface, you'll find several options for configuring the CDC 
 In practice, the key is to select the 'Multiplier', 'Reference', and 'Offset' parameters in such a way that maximizes the number of counts yielded by the digital conversion within the range of capacitance values you're interested in. 
 
 > [!IMPORTANT]
->
 > The reference tables in the datasheet are very useful for setting the correct CDC parameters. A link to the relevant pages of the datasheet is available in the sidebar of the UI.
 
 #### How to Adjust
@@ -165,11 +197,9 @@ In practice, the key is to select the 'Multiplier', 'Reference', and 'Offset' pa
 3. Save your settings to apply changes.
 
 > [!NOTE]
->
 > It's important to choose the settings carefully to optimize sensor performance. Incorrect settings can produce readings that appear accurate but are actually invalid. 
 
 > [!WARNING]
->
 > The CDC input range should be adjusted experimentally with your actual setup to achieve optimal results. Make sure to validate your configuration.
 
 ---
@@ -200,7 +230,6 @@ Click the "Update" button to start the firmware upgrade process.
 After initiating the update, it will take approximately 2 minutes for the process to complete. During this time, it's important not to turn off or disconnect the device.
 
 > [!Note]
->  
 > The update procedure fetches the latest release from this GitHub repository, which includes both firmware and server files. Make sure you have a stable internet connection before initiating an update.
 
 
